@@ -3,7 +3,7 @@ services:
   name: line-bot-python-flask
   env: python
   repo: https://github.com/jack60810/line-bot-sdk-python.git # 改這裡
-  buildCommand: cd examples/flask-echo-tku;pip install gunicorn -r requirements.txt  #改這裡
+  buildCommand: cd examples/flask-echo-test;pip install gunicorn -r requirements.txt  #改這裡
   startCommand: cd examples/flask-echo-tku;gunicorn app:app
   plan: free
   autoDeploy: false
